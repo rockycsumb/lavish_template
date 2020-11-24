@@ -25,9 +25,9 @@
 	transition: all 0.3s ease-out;
 }
 
-.btn-medium {
+.btn--medium {
 	padding: 8px 20px;
-	font-size: 8px;
+	font-size: 18px;
 }
 
 .btn--large {
@@ -46,6 +46,7 @@
 	padding: 14px 20px;
 	border: 1px solid #fff;
 	transition: all 0.3s ease-out;
+	
 }
 
 .btn--wide {

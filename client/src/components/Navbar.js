@@ -33,7 +33,7 @@ function Navbar() {
 		<IconContext.Provider value={{color: '#fff'}}>
 		<div className="navbar">
 			<div className="navbar-container container">
-				<Link to="/" className="navbar-logo">
+				<Link to="/" className="navbar-logo" onClick={closeMobileMenu} >
 					<MdFingerprint className="navbar-icon" />
 					LAVISH
 				</Link>
@@ -42,17 +42,17 @@ function Navbar() {
 				</div>
 				<ul className={click ? 'nav-menu active' : 'nav-menu'}>
 					<li className="nav-item">
-						<Link to="/" className="nav-links">
+						<Link to="/" className="nav-links" onClick={closeMobileMenu} >
 							Home
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link to="/services" className="nav-links">
+						<Link to="/services" className="nav-links" onClick={closeMobileMenu} >
 							Services
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link to="/products" className="nav-links">
+						<Link to="/products" className="nav-links" onClick={closeMobileMenu} >
 							Products
 						</Link>
 					</li>
@@ -64,9 +64,9 @@ function Navbar() {
 								</Button>
 							</Link>
 						):(
-							<Link to="/signup" className="btn-link">
+							<Link to="/signup" className="btn-link" onClick={closeMobileMenu}>
 								<Button buttonStyle="btn--outline"
-										buttonSize="btn-mobile"
+										buttonSize="btn--mobile"
 									>Sign Up</Button>
 							</Link>
 						)}
